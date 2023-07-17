@@ -1,0 +1,168 @@
+/* Google Font =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;800;900&display=swap');
+
+/* Lobster Two Font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+/* Poppins Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Custom Font  */
+@font-face {
+    font-family: captureIt;
+    src: url(Capture\ it.ttf);
+  }
+
+
+/* Color Veriable =========================== */
+
+:root {
+    --praimary: #ddd;
+    --btn-color: #ff9d2d;
+    --dark: #333;
+    --deep-dark:#000;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Common Style =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Lobster Two', cursive; */
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background: var(--praimary);
+}
+
+/* Header Style =====================  */
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 70px;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff9d2d07;
+    padding: 0 100px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.navbar .logo a,
+.navbar .logo a span
+{
+    color: var(--light);
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.navbar .logo a span {
+    color: var(--btn-color);
+}
+
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-items li a{
+    color: var(--light);
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.nav-items li a:hover {
+    color: var(--btn-color);
+}
+
+.nav-items button {
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid var(--btn-color);
+    background: var(--btn-color);
+    color: var(--light);
+    border-radius: 25px;
+    font-weight: 500;
+    padding: 0.4rem 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-items button:hover {
+    background: none;
+    border: 1px solid var(--light);
+    color: var(--light);
+}
+
+/* Hero section style ====================== */
+.hero-section {
+    height: calc(100vh - 70px);
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section .hero-text-welcome {
+    color: var(--btn-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.hero-section .hero-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 900;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: var(--praimary);
+}
+
+.hero-section .buy-now-btn {
+    outline: none;
+    border: 1px solid var(--btn-color);
+    background: var(--btn-color);
+    color: var(--light);
+    max-width: 110px;
+    padding: 0.5rem 0;
+    margin-top: 15px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.hero-section .buy-now-btn:hover {
+    border: 1px solid var(--light);
+    background: none;
+    color: var(--light);
+}
