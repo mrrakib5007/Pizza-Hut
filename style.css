@@ -1,4 +1,6 @@
 /* Google Font =========================== */
+
+/* Alegreya Sans font  */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;800;900&display=swap');
 
 /* Lobster Two Font */
@@ -7,20 +9,14 @@
 /* Poppins Font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/* Custom Font  */
-@font-face {
-    font-family: captureIt;
-    src: url(Capture\ it.ttf);
-  }
-
-
 /* Color Veriable =========================== */
 
 :root {
     --praimary: #ddd;
     --btn-color: #ff9d2d;
     --dark: #333;
-    --deep-dark:#000;
+    --gray: #999;
+    --black:#000;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
@@ -31,7 +27,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Lobster Two', cursive; */
 }
 
 img{
@@ -49,6 +44,25 @@ a{
 body {
     background: var(--praimary);
 }
+
+.section-title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section-title-header {
+    margin: 0;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #ff9d2d;
+}
+.section-title-description {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+
 
 /* Header Style =====================  */
 header {
@@ -165,4 +179,49 @@ header {
     border: 1px solid var(--light);
     background: none;
     color: var(--light);
+}
+
+
+
+/* food-menu-section  */
+.food-menu-section {
+    margin: 100px 0;
+    padding: 0 100px;
+}
+
+.food-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.food-item-container .food-item-box {
+    background: var(--light);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.food-item-container .food-item-box .food-img {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    max-width: 180px;
+}
+
+.food-item-title {
+    font-size: 1.4rem;
+    color: var(--dark);
+}
+
+.food-item-description {
+    color: var(--gray);
+}
+
+
+.food-ratting-icon {
+    color: var(--btn-color);
+    font-size: 0.8rem;
 }
