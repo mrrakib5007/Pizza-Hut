@@ -6,14 +6,6 @@
 @media(max-width: 500px) {
 
     /* Header Section Responsive  */
-
-    header {
-        min-height: 100vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
     .navbar {
         height: 70px;
         display: flex;
