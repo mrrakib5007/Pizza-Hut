@@ -1,0 +1,71 @@
+.hide {
+    display: none;
+}
+
+/* Responsive for Mobile Device ==================== */
+@media(max-width: 500px) {
+
+    /* Header Section Responsive  */
+
+    header {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .navbar {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .logo a, .navbar .logo a span {
+        font-family: 'Lobster Two', cursive;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-section .hero-title {
+        font-size: 1.6rem;
+        font-weight: 800;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+    }
+    .hero-section .hero-text-welcome {
+        color: var(--btn-color);
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .hero-section .buy-now-btn {
+        font-weight: 500;
+        max-width: 110px;
+        padding: 0.4rem 0;
+        margin-top: 15px;
+    }
+
+
+    /* Our Food Items responsive */
+    .food-menu-section {
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .section-title-description {
+        font-size: 2rem;
+    }
+
+}
