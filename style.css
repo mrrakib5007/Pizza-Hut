@@ -68,7 +68,7 @@ a{
 
 /* Header Style =====================  */
 header {
-    height: 800px;
+    height: 700px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -175,6 +175,7 @@ header {
     padding: 0.5rem 0;
     margin-top: 15px;
     border-radius: 25px;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
@@ -276,6 +277,8 @@ header {
 /* about-us Section ===================== */
 
 .about-us-container {
+    width: 100%;
+    max-width: 1350px;
     margin: 100px 0;
     padding: 0 100px;
 }
