@@ -26,19 +26,15 @@
     }
 
     .hero-section {
-        height: 100vh;
+        height: 600px;
         padding: 20px;
         display: flex;
         justify-content: center;
     }
     .hero-section .hero-title {
         font-size: 1.6rem;
-        font-weight: 800;
-        word-spacing: 5px;
-        letter-spacing: 1px;
     }
     .hero-section .hero-text-welcome {
-        color: var(--btn-color);
         font-size: 0.8rem;
         margin-bottom: 10px;
     }
@@ -58,6 +54,20 @@
 
     .section-title-description {
         font-size: 2rem;
+    }
+
+
+    /* About Pizza Hut Responsive  */
+    .about-us-container {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .about-us-content {
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-gap: 50px;
+        margin-top: 50px;
     }
 
 }

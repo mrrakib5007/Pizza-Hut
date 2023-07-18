@@ -43,6 +43,9 @@ a{
 
 body {
     background: var(--praimary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section-title {
@@ -66,7 +69,7 @@ body {
 
 /* Header Style =====================  */
 header {
-    min-height: 100vh;
+    height: 800px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -138,7 +141,7 @@ header {
 
 /* Hero section style ====================== */
 .hero-section {
-    height: calc(100vh - 70px);
+    height: 100%;
     padding: 0 100px;
     display: flex;
     flex-direction: column;
@@ -184,7 +187,7 @@ header {
 
 
 
-/* food-menu-section  */
+/* food-menu-section ===================== */
 .food-menu-section {
     margin: 100px 0;
     padding: 0 100px;
@@ -226,7 +229,7 @@ header {
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #ED1A3F;
+    color: #E64133;
     margin-bottom: 10px;
 }
 
@@ -268,4 +271,61 @@ header {
 .add-to-cart:hover {
     background: var(--btn-color);
     color: var(--light);
+}
+
+
+/* about-us Section ===================== */
+
+
+.about-us-container {
+    margin: 100px 0;
+    padding: 0 100px;
+}
+
+.about-us-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.about-us-left {
+    display: grid;
+    place-items: center;
+}
+.about-us-left img {
+    max-width: 90%;
+}
+
+
+/* about-us-right  */
+.about-us-title {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.about-us-description {
+    font-size: 0.9rem;
+    color: var(--gray);
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.about-us-btn {
+    padding: 0.6rem 1.5rem;
+    outline: none;
+    border: 1px solid var(--dark);
+    background: var(--dark);
+    color: var(--light);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.about-us-btn:hover {
+    border: 1px solid var(--dark);
+    background: var(--light);
+    color: var(--black);
 }
