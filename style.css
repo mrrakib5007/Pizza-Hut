@@ -42,10 +42,7 @@ a{
 }
 
 body {
-    background: var(--praimary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 .section-title {
@@ -64,6 +61,12 @@ body {
     margin: 0;
     font-size: 2.5rem;
     color: var(--dark);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
@@ -141,7 +144,7 @@ header {
 
 /* Hero section style ====================== */
 .hero-section {
-    height: 100%;
+    height: calc(800px - 70px);
     padding: 0 100px;
     display: flex;
     flex-direction: column;
@@ -276,7 +279,6 @@ header {
 
 /* about-us Section ===================== */
 
-
 .about-us-container {
     margin: 100px 0;
     padding: 0 100px;
@@ -328,4 +330,22 @@ header {
     border: 1px solid var(--dark);
     background: var(--light);
     color: var(--black);
+}
+
+
+/* our-service section  */
+.our-service {
+    margin: 100px 0;
+    padding: 0 100px;
+}
+
+.service-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.service-box {
+    background: var(--light);
 }
